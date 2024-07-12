@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", "Open Sans"
+}
+
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+
+    background: #141313;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content{
+    width: 350px;
+}
+
+.heading{
+    padding: 0.1em;
+    padding-left: 2em;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+
+    /* margin-bottom: 1em; */
+}
+
+.heading h1{
+    color: #FFFFFF;
+    font-size: 2.3em;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.main{
+    /* border: 2px solid white; */
+    padding: 1.1em;
+    display: grid;
+    gap: 0.6em;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+    grid-template-columns: 70px 70px 70px 70px;
+    grid-template-rows: 70px 70px 70px 70px 70px;
+    grid-template-areas: 
+                        "res res res clear"
+                        "one two three plus"
+                        "four five six  sub"
+                        "seven eight nine mul"
+                        "divide zero decimal equal";
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 700;
+    background: #2F3332;
+    color: #FFFFFF;
+    border: 3px solid #2F3332;
+
+    border-radius: 50%;
+}
+
+.result{
+    overflow-x: hidden;
+    padding: 1em;
+    grid-area: res;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+    background: #2F3332;
+    color: #FFFFFF;
+    border: 3px solid #2F3332;
+
+    border-radius: 4em;
+}
+
+.button:hover{
+    background: #555555;
+}
+
+.clear{
+    grid-area: clear;
+    background: #FF2A2A;
+    border: 3px solid #FF2A2A;
+}
+
+.clear:hover{
+    background: #a21b1b;
+    border: 3px solid #a21b1b;
+}
+
+.div1{
+    grid-area: one;
+}
+
+.div2{
+    grid-area: two;
+}
+
+.div3{
+    grid-area: three;
+}
+
+.div4{
+    grid-area: four;
+}
+
+.div5{
+    grid-area: five;
+}
+
+.div6{
+    grid-area: six;
+}
+
+.div7{
+    grid-area: seven;
+}
+
+.div8{
+    grid-area: eight;
+}
+
+.div9{
+    grid-area: nine;
+}
+
+.div0{
+    grid-area:zero;
+}
+
+.opr-plus{
+    grid-area:plus;
+}
+
+.opr-sub{
+    grid-area:sub;
+}
+
+.opr-mul{
+    grid-area:mul;
+}
+
+.opr-divide{
+    grid-area:divide;
+}
+
+.opr-equal{
+    grid-area:equal;
+    background: #25DB72;
+    border: 3px solid #25DB72;
+}
+
+.opr-equal:hover{
+    background: #35ad67;
+    border: 3px solid #35ad67;
+}
+
+.decimal{
+    grid-area:decimal;
+}
